@@ -23,7 +23,71 @@
 		<main>
 			<section class="filters">
 				<h2 class="display-hidden">Фильтр товаров</h2>
-				<!--Здесь будет форма-->
+				<form class="filter" action="https://echo.htmlacademy.ru" method="post">
+					<fieldset class="filter-sort">
+						<legend>Сортировать</legend>
+						<ul class="filter-option">
+							<li>
+								<label><input class="display-hidden filter-radio" type="radio" name="sort" value="price">По цене</label>
+							</li>
+							<li>
+								<label><input class="display-hidden filter-radio" type="radio" name="sort" value="type">По типу</label>
+							</li>
+							<li>
+								<label><input class="display-hidden filter-radio" type="radio" name="sort" value="title">По названию</label>
+							</li>
+						</ul>
+					</fieldset>
+					<fieldset class="filter-slider">
+						<legend>Стоимость</legend>
+						<div class="slider-range">
+							<input type="range" min="0" max="15000" step="100" value="7500">
+						</div>
+						<div class="pull-left">
+                            <span class="input-slider"> от</span>
+                            <input class="slider-min" name="catalog-min" id="" type="text" value="">
+						</div>
+						<div class="pull-right">
+                            <span class="input-slider"> до</span>
+                            <input class="slider-max" name="catalog-max" id="" type="text" value="">
+						</div>
+					</fieldset>
+					<fieldset class="filter-grid">
+						<legend>Сетка</legend>
+						<ul class="filter-option">
+							<li>
+								<label><input class="display-hidden filter-radio" type="radio" name="grid" value="adaptive">Адаптивная</label>
+							</li>
+							<li>
+								<label><input class="display-hidden filter-radio" type="radio" name="grid" value="fixed">Фиксированная</label>
+							</li>
+							<li>
+								<label><input class="display-hidden filter-radio" type="radio" name="grid" value="rubber">Резиновая</label>
+							</li>
+						</ul>
+					</fieldset>
+					<fieldset class="filter-feature">
+						<legend>Особенности</legend>
+						<ul class="filter-option">
+							<li>
+								<label><input class="display-hidden filter-checkbox" type="checkbox" name="slider" checked>Слайдер</label>
+							</li>
+							<li>
+								<label><input class="display-hidden filter-checkbox" type="checkbox" name="advantages">Блок преимуществ</label>
+							</li>
+							<li>
+								<label><input class="display-hidden filter-checkbox" type="checkbox" name="news" checked>Новости</label>
+							</li>
+							<li>
+								<label><input class="display-hidden filter-checkbox" type="checkbox" name="gallery">Галерея</label>
+							</li>
+							<li>
+								<label><input class="display-hidden filter-checkbox" type="checkbox" name="basket">Корзина</label>
+							</li>
+						</ul>
+					</fieldset>
+					<button type="submit" class="filter-button button">Показать</button>
+				</form>
 			</section>
 			<section class="catalog">
 				<h2 class="display-hidden">Готовые макеты</h2>
@@ -101,9 +165,9 @@
 		</main>
 		<footer class="ftr-main">
 			<ul class="social-menu">
-				<li><a href="#" title="В Контакте">В Контакте</a></li>
-				<li><a href="#" title="Фейсбук">Фейсбук</a></li>
-				<li><a href="#" title="Инстаграм">Инстаграм</a></li>
+				<li><a href="#" title="В Контакте" target="_blank">В Контакте</a></li>
+				<li><a href="#" title="Фейсбук" target="_blank">Фейсбук</a></li>
+				<li><a href="#" title="Инстаграм" target="_blank">Инстаграм</a></li>
 			</ul>
 			<p><strong>Давайте дружить, это выгодно!</strong><br>Скидка 10% для друзей из социальных сетей.</p>
 		</footer>
