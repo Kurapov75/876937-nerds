@@ -151,7 +151,7 @@
 			<section class="contacts">
 				<h2 class="display-hidden">Наши контактные данные</h2>
 				<div class="wrapper-contacts">
-					<iframe src="https://yandex.ru/map-widget/v1/-/CBFunCEKpA" width="100%" height="400" frameborder="0" allowfullscreen="true"></iframe>
+					<iframe src="https://yandex.ru/map-widget/v1/-/CBFunCEKpA" width="600" height="400" frameborder="0" allowfullscreen="true"></iframe>
 					<div class="windows-contacts">
 						<h4>NЁRDS DESIGN STUDIO</h4>
 						<p>191186, Санкт-Петербург,<br> 
@@ -161,6 +161,25 @@
 						<a class="button btn-large" href="mailto:#" title="Написать письмо">Напишите нам</a>
 					</div>
 				</div>
+			</section>
+			<section class="modal modal-message">
+				<h2>Напишите нам</h2>
+				<form class="message" action="https://echo.htmlacademy.ru" method="post">
+					<p>
+						<label for="name-field">Ваше имя:</label><br>
+						<input type="text" name="name" id="name-field" placeholder="Имя Фамилия">
+					</p>
+					<p>
+						<label for="email-field">Ваш e-mail:</label><br>
+						<input type="email" name="email" id="email-field" placeholder="email@example.com">
+					</p>
+					<p>
+						<label for="message-field">Текст письма:</label><br>
+						<textarea name="message" id="message-field">В свободной форме</textarea>
+					</p>
+					<button class="modal-close" type="button">Закрыть</button>
+					<button type="submit" class="modal-button button">Отправить</button>
+				</form>
 			</section>
 		</main>
 		<footer class="ftr-main">
