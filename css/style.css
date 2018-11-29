@@ -29,6 +29,11 @@ body {
       background-color: #e74246;
   }
 
+  .button:active {
+    background-color: #d7373b;
+    box-shadow: inset 0 3px #c13135;
+  }
+/*
   .visually-hidden {
     position: absolute;
     width: 1px;
@@ -39,7 +44,7 @@ body {
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
-
+*/
   header,
   .slider {
       background-color: #eee;
@@ -106,6 +111,90 @@ body {
     vertical-align: middle;
   }
 
+  legend {
+    color: #000;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .filter fieldset {
+    border: none;
+  }
+
+  .filter ul {
+    line-height: 40px;
+  }
+
+  .filter legend {
+    line-height: 20px;
+  }
+
+  .filters input:hover+label,
+  .filters input:focus+label {
+    color: #283136;
+  }
+
+  .filters input:disabled+label {
+    color: #bec1c2;
+  }
+
+  .filter-button {
+    outline: none;
+  }
+
+  .catalog-item {
+    background-color: #e9e9e9;
+  }
+
+  .catalog-item:hover {
+    background-color: #4d4d4d;
+  }
+
+  .catalog-item-hidden {
+    background-color: #eee;
+    text-align: center;
+  }
+
+  .catalog-item-hidden h3 {
+    color: #000;
+    text-transform: uppercase;
+  }
+
+  .pagination-item a { 
+    color: #000;
+    background-color: #eee;
+  }
+  
+  .pagination-item a:hover,
+  .pagination-item a:focus {
+    background-color: #dfdfdf;
+  }
+  
+  .pagination-item a:active {
+    color: #959595;
+    background-color: #d5d5d5;
+  }
+
+  .pagination-item-current a { /*Стиль ссылки на текущую страницу отличается. Задаем черный цвет текста и белый фон. А чтобы стиль ссылки не менялся при взаимодействии, дублируем стилевые правила текущей ссылки для различных состояний (наведение, фокус, активная ссылка).*/
+    color: #000000;
+    background-color: #fff;
+    border: 1px solid #dfdfdf;
+  }
+  
+  .pagination-item-current a:hover,
+  .pagination-item-current a:focus,
+  .pagination-item-current a:active {
+    color: #000000;
+    background-color: #ffffff;
+  }
+
+  .ftr-main strong {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
   .modal input,
   .modal textarea {
     font: inherit;
@@ -133,10 +222,4 @@ body {
   .modal label {
     font-weight: 700;
     line-height: 18px;
-  }
-
-  .ftr-main strong {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 36px;
   }
