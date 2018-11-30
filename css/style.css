@@ -18,6 +18,9 @@ body {
     font: inherit;
     text-align: center;
     color: #ffffff;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
     vertical-align: middle;
     text-transform: uppercase;
     background-color: #fb565a;
@@ -30,6 +33,7 @@ body {
   }
 
   .button:active {
+    color: rgba(255, 255, 255, 0.5);
     background-color: #d7373b;
     box-shadow: inset 0 3px #c13135;
   }
@@ -48,6 +52,14 @@ body {
   header,
   .slider {
       background-color: #eee;
+  }
+
+  .hdr-logo img:hover {
+    opacity: 0.8;
+  }
+
+  .hdr-logo img:active {
+    opacity: 0.3;
   }
 
   nav a,
@@ -74,18 +86,45 @@ body {
       border-bottom: 2px solid #fb565a;
   }
 
-  .advantages h3 {
+  .wrapper-slide p:first-child {
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 55px;
+  }
+
+  .advant-item h3 {
     font-weight: 700;
     font-size: 24px;
     line-height: 30px;
+    text-transform: uppercase;
   }
 
-  .advant-item:nth-child(2) a {
+  .btn-green {
     background-color: #00ca74;
   }
 
-  .advant-item:last-child a {
+  .btn-green:hover,
+  .btn-green:focus {
+      background-color: #00bc6c;
+  }
+
+  .btn-green:active {
+    background-color: #00aa62;
+    box-shadow: inset 0 3px #009958;
+  }
+
+  .btn-yellow {
       background-color: #efc84a;
+  }
+
+  .btn-yellow:hover,
+  .btn-yellow:focus {
+      background-color: #eab534;
+  }
+
+  .btn-yellow:active {
+    background-color: #e5a722;
+    box-shadow: inset 0 3px #ce961f;
   }
 
   .wrapper-studio p:first-child {
@@ -94,28 +133,34 @@ body {
     line-height: 45px;
   }
 
-  caption,
+  .studio-table caption,
   .wrapper-studio p:last-of-type {
     font-weight: 700;
   }
 
-  table strong {
+  .studio-table strong {
     font-weight: 700;
     font-size: 45px;
     line-height: 10.06px;
   }
 
-  table sup {
+  .studio-table sup {
     font-weight: 700;
     font-size: 32px;
     vertical-align: middle;
   }
 
-  legend {
+  .windows-contacts h4 {
     color: #000;
     font-weight: 700;
     font-size: 18px;
     line-height: 30px;
+  }
+
+  .windows-contacts p {
+    color: #666;
+    font-size: 16px;
+    line-height: 18px;
   }
 
   .filter fieldset {
@@ -127,7 +172,10 @@ body {
   }
 
   .filter legend {
-    line-height: 20px;
+    color: #000;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
   }
 
   .filters input:hover+label,
@@ -158,7 +206,15 @@ body {
 
   .catalog-item-hidden h3 {
     color: #000;
+    font-size: 18px;
+    line-height: 30px;
     text-transform: uppercase;
+  }
+
+  .catalog-item-hidden p {
+    color: #666;
+    font-size: 16px;
+    line-height: 18px;
   }
 
   .pagination-item a { 
@@ -176,7 +232,7 @@ body {
     background-color: #d5d5d5;
   }
 
-  .pagination-item-current a { /*Стиль ссылки на текущую страницу отличается. Задаем черный цвет текста и белый фон. А чтобы стиль ссылки не менялся при взаимодействии, дублируем стилевые правила текущей ссылки для различных состояний (наведение, фокус, активная ссылка).*/
+  .pagination-item-current a {
     color: #000000;
     background-color: #fff;
     border: 1px solid #dfdfdf;
@@ -189,10 +245,34 @@ body {
     background-color: #ffffff;
   }
 
+  .social-menu a {
+    background-color: #e1e1e1;
+  }
+
+  .social-menu a:hover,
+  .social-menu a:focus {
+    background-color: #e74246;
+  }
+
+  .social-menu a:active {
+    background-color: #d7373b;
+    box-shadow: inset 0 3px #c13135;
+  }
+
+  .social-menu a:active img {
+    opacity: 0.5;
+  }
+
   .ftr-main strong {
+    color: #000;
     font-weight: 700;
     font-size: 36px;
     line-height: 36px;
+  }
+
+  .ftr-main p:last-child {
+    color: #444;
+    line-height: 22px;
   }
 
   .modal input,
