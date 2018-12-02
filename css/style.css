@@ -107,6 +107,12 @@ body {
       color: #ababab;
   }
 
+  .main-menu {
+    display: flex;
+    justify-content: space-between;
+    width: 440px;
+  }
+
   .main-menu-current {
       border-bottom: 2px solid #fb565a;
   }
@@ -434,9 +440,23 @@ body {
     margin-right: 140px;
   }
 
-  .social-menu a {
-    background-color: #e1e1e1;
+  .social-menu li {
+    display: inline-block;
   }
+
+  .social-menu a {
+    display: inline-block;
+    background-color: #e1e1e1;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 80px;
+  }
+
+  .social-menu img {
+    vertical-align: middle;
+  } 
 
   .social-menu a:hover,
   .social-menu a:focus {
@@ -451,6 +471,7 @@ body {
   .social-menu a:active img {
     opacity: 0.5;
   }
+
 
   .ftr-main strong {
     color: #000;
