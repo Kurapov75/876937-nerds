@@ -12,6 +12,8 @@ body {
 
   ul {
       list-style: none;
+      margin: 0;
+      padding: 0;
   }
 
   .button {
@@ -37,7 +39,7 @@ body {
     background-color: #d7373b;
     box-shadow: inset 0 3px #c13135;
   }
-/*
+
   .visually-hidden {
     position: absolute;
     width: 1px;
@@ -48,12 +50,27 @@ body {
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
-*/
+
+  .layout-positioner {
+    width: 1160px;
+    margin: 0 auto;
+  }
+
   header,
   .slider {
       background-color: #eee;
   }
 
+  .hdr-main {
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+
+  .hdr-main .layout-positioner {
+    display: flex;
+    justify-content: space-between;
+  }
+  
   .hdr-logo img:hover {
     opacity: 0.8;
   }
@@ -86,12 +103,37 @@ body {
       border-bottom: 2px solid #fb565a;
   }
 
+  .wrapper-slide {
+    width: 520px;
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
+
+  .wrapper-slide p {
+    margin-top: 25px;
+    margin-bottom: 30px;
+  }
+
   .wrapper-slide p:first-child {
+    margin: 0;
     font-weight: 500;
     font-size: 55px;
     line-height: 55px;
   }
 
+  .advant-list {
+    display: flex;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    border-bottom: 2px solid #eee;
+  }
+
+  .advant-item {
+    width: 300px;
+    margin-right: 100px;
+    padding-top: 170px;
+  }
+  
   .advant-item h3 {
     font-weight: 700;
     font-size: 24px;
@@ -127,15 +169,56 @@ body {
     box-shadow: inset 0 3px #ce961f;
   }
 
+  .studio {
+    padding-top: 35px;
+    padding-bottom: 70px;
+  }
+
+  .studio .layout-positioner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .wrapper-studio li {
+    margin-bottom: 30px;
+  }
+
+  .wrapper-studio:first-child {
+    width: 660px;
+  }
+
+  .wrapper-studio:last-child {
+    width: 360px;
+    padding-top: 250px;
+  }
+
   .wrapper-studio p:first-child {
     font-weight: 700;
     font-size: 45px;
     line-height: 45px;
+    margin-bottom: 30px;
+  }
+
+  .wrapper-studio p:nth-child(2) {
+    margin-bottom: 40px;
+  }
+
+  .wrapper-studio p:last-of-type {
+    margin-bottom: 25px;
+  }
+
+  .studio-table caption {
+    margin-bottom: 50px;
+  }
+
+  .studio-table  {
+    border-spacing: 15px;
   }
 
   .studio-table caption,
   .wrapper-studio p:last-of-type {
     font-weight: 700;
+    text-transform: uppercase;
   }
 
   .studio-table strong {
@@ -148,6 +231,15 @@ body {
     font-weight: 700;
     font-size: 32px;
     vertical-align: middle;
+  }
+
+  .partners-list {
+    display: flex;
+    justify-content: space-around;
+    border-top: 2px solid #eee;
+    padding-top: 45px;
+    padding-bottom: 40px;
+    border-bottom: 2px solid #eee;
   }
 
   .windows-contacts h4 {
@@ -243,6 +335,15 @@ body {
   .pagination-item-current a:active {
     color: #000000;
     background-color: #ffffff;
+  }
+
+  .ftr-main .layout-positioner {
+    display: flex;
+  }
+
+  .social-menu {
+    width: 260px;
+    margin-right: 140px;
   }
 
   .social-menu a {
