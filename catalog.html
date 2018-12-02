@@ -9,6 +9,7 @@
 	</head>
 	<body>
 		<header class="hdr-main">
+			<div class="layout-positioner">
 			<a class="hdr-logo" href="index.html">
 				<img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии Нёрдс">
 			</a>
@@ -21,28 +22,17 @@
 				</ul>
 			</nav>
 			<a class="basket" href="#">Корзина</a>
+			</div>
 			<h1>Магазин готовых шаблонов</h1>
 		</header>
 		<main>
+			<div class="layout-positioner">
+			<div class="flex-container">
 			<section class="filters">
 				<h2 class="visually-hidden">Фильтр товаров</h2>
 				<form class="filter" action="https://echo.htmlacademy.ru" method="post">
-					<fieldset class="filter-sort">
-						<legend>Сортировать</legend>
-						<ul class="filter-option">
-							<li>
-								<label><input class="visually-hidden filter-radio" type="radio" name="sort" value="price">По цене</label>
-							</li>
-							<li>
-								<label><input class="visually-hidden filter-radio" type="radio" name="sort" value="type">По типу</label>
-							</li>
-							<li>
-								<label><input class="visually-hidden filter-radio" type="radio" name="sort" value="title">По названию</label>
-							</li>
-						</ul>
-					</fieldset>
 					<fieldset class="filter-slider">
-						<legend>Стоимость</legend>
+						<legend>Стоимость:</legend>
 						<div class="slider-range">
 							<input type="range" min="0" max="15000" step="100" value="7500">
 						</div>
@@ -102,6 +92,14 @@
 			</section>
 			<section class="catalog">
 				<h2 class="visually-hidden">Готовые макеты</h2>
+				<div class="sort">
+					<p>Сортировать:</p>
+					<ul>
+						<li><a href="#">По цене</a></li>
+						<li><a href="#">По типу</a></li>
+						<li><a href="#">По названию</a></li>
+					</ul>
+				</div>
 				<ul class="catalog-list">
 					<li class="catalog-item">
 						<img src="img/img-sedona.jpg" width="360" height="575" alt="Миниатюра макета Седона">
@@ -159,6 +157,8 @@
 					<li class="pagination-item"><a href="#">Следующая</a></li>
 				</ul>
 			</section>
+			</div>
+			</div>
 			<section class="contacts">
 				<h2 class="visually-hidden">Наши контактные данные</h2>
 				<div class="wrapper-contacts">
@@ -194,12 +194,16 @@
 			</section>
 		</main>
 		<footer class="ftr-main">
+			<div class="layout-positioner">
 			<ul class="social-menu">
-				<li><a href="#" title="В Контакте" target="_blank">В Контакте</a></li>
-				<li><a href="#" title="Фейсбук" target="_blank">Фейсбук</a></li>
-				<li><a href="#" title="Инстаграм" target="_blank">Инстаграм</a></li>
+				<li><a href="#" title="Мы В Контакте" target="_blank"><img src="img/vk-icon.svg"></a></li>
+				<li><a href="#" title="Мы в Фейсбуке" target="_blank"><img src="img/fb-icon.svg"></a></li>
+				<li><a href="#" title="Мы в Инстаграм" target="_blank"><img src="img/insta-icon.svg"></a></li>
 			</ul>
+			<div class="promo">
 			<p><strong>Давайте дружить, это выгодно!</strong><br>Скидка 10% для друзей из социальных сетей.</p>
+			</div>
+			</div>
 		</footer>
 	</body>
 </html>
