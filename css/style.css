@@ -69,6 +69,7 @@ body {
   .hdr-main .layout-positioner {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
   
   .hdr-main h1 {
@@ -433,6 +434,7 @@ body {
 
   .ftr-main .layout-positioner {
     display: flex;
+    align-items: center;
   }
 
   .social-menu {
