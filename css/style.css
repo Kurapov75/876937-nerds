@@ -459,6 +459,11 @@
     background-color: #ffffff;
   }
 
+  .ftr-main {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
   .ftr-main .layout-positioner {
     display: flex;
     align-items: center;
@@ -466,7 +471,7 @@
 
   .social-menu {
     width: 260px;
-    margin-right: 140px;
+    margin-right: 127px;
   }
 
   .social-menu li {
@@ -510,6 +515,7 @@
   }
 
   .ftr-main p:last-child {
+    margin-top: -7px;
     color: #444;
     line-height: 22px;
   }
