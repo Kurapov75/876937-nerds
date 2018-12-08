@@ -73,7 +73,6 @@
 
   .hdr-main {
     padding-top: 50px;
-    padding-bottom: 20px;
   }
 
   .hdr-main .layout-positioner {
@@ -146,15 +145,20 @@
     background: url("../img/cart-icon.png") no-repeat;
   }
 
+  .feature-slide {
+    height: 430px;
+    outline: 1px solid red; /* Временно */
+  }
+
   .wrapper-slide {
     width: 520px;
-    padding-top: 60px;
+    padding-top: 80px;
     padding-bottom: 80px;
   }
 
   .wrapper-slide p {
     margin-top: 25px;
-    margin-bottom: 30px;
+    margin-bottom: 48px;
   }
 
   .wrapper-slide p:first-child {
@@ -162,6 +166,22 @@
     font-weight: 500;
     font-size: 55px;
     line-height: 55px;
+  }
+
+  .slide-first {
+    background: url("../img/slide1.png") no-repeat right 30px bottom;
+  }
+
+  .slide-second {
+    background: url("../img/slide2.png") no-repeat right bottom;
+  }
+
+  .slide-third {
+    background: url("../img/slide3.png") no-repeat right bottom;
+  }
+
+  .btn-slide {
+    padding: 15px 55px;
   }
 
   .advant-list {
@@ -235,8 +255,8 @@
   }
 
   .studio {
-    padding-top: 35px;
-    padding-bottom: 70px;
+    padding-top: 40px;
+    padding-bottom: 45px;
   }
 
   .studio .layout-positioner {
@@ -245,7 +265,13 @@
   }
 
   .wrapper-studio li {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
+  }
+
+  .wrapper-studio li::before {
+    content: "― ";
+    color: #fb565a;
+    font-size: 27px;
   }
 
   .wrapper-studio:first-child {
@@ -254,18 +280,20 @@
 
   .wrapper-studio:last-child {
     width: 360px;
-    padding-top: 250px;
+    padding-top: 245px;
+    background: url("../img/nerds-illustration.jpg") no-repeat;
   }
 
   .wrapper-studio p:first-child {
     font-weight: 700;
     font-size: 45px;
     line-height: 45px;
+    margin-top: 35px;
     margin-bottom: 30px;
   }
 
   .wrapper-studio p:nth-child(2) {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
 
   .wrapper-studio p:last-of-type {
@@ -276,14 +304,16 @@
     margin-bottom: 50px;
   }
 
-  .studio-table  {
-    border-spacing: 15px;
-  }
-
   .studio-table caption,
   .wrapper-studio p:last-of-type {
     font-weight: 700;
     text-transform: uppercase;
+  }
+
+  .studio-table td {
+    padding: 5px 20px 15px 0;
+    text-align: left;
+    line-height: 1.2;
   }
 
   .studio-table strong {
@@ -294,7 +324,7 @@
 
   .studio-table sup {
     font-weight: 700;
-    font-size: 32px;
+    font-size: 30px;
     vertical-align: middle;
   }
 
