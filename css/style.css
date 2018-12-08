@@ -303,8 +303,20 @@
     justify-content: space-around;
     border-top: 2px solid #eee;
     padding-top: 45px;
-    padding-bottom: 40px;
+    padding-bottom: 37px;
     border-bottom: 2px solid #eee;
+  }
+
+  .partner-item:first-child {
+    margin-top: 17px;
+  }
+
+  .partner-item:nth-child(3) img{
+    margin-top: 17px;
+  }
+
+  .partner-item:last-child {
+    margin-top: 7px;
   }
 
   .windows-contacts h4 {
