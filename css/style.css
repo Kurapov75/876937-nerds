@@ -728,12 +728,28 @@
     line-height: 22px;
   }
 
+  .modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(255,255,255,0.4);
+    display: none;
+  }
+
+  .modal:target {
+    display: block;
+    pointer-events: auto;
+  }
+
   .modal-message {
     position: relative;
     width: 960px;
     height: 590px;
     padding: 67px 100px;
-    margin: 0 auto; /* Временно */
+    margin: 50vh auto;
+    transform: translateY(-300px);
     box-sizing: border-box;
     background-color: #fff;
     box-shadow: 0 15px 50px -10px #000;
