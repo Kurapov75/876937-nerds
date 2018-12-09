@@ -135,15 +135,15 @@
 		</section>
 		<section class="contacts">
 			<h2 class="visually-hidden">Наши контактные данные</h2>
+			<iframe src="https://yandex.ru/map-widget/v1/-/CBFunCEKpA" width="600" height="420" frameborder="0" allowfullscreen="true"></iframe>
 			<div class="wrapper-contacts">
-				<iframe src="https://yandex.ru/map-widget/v1/-/CBFunCEKpA" width="600" height="400" frameborder="0" allowfullscreen="true"></iframe>
 				<div class="windows-contacts">
 					<h4>NЁRDS DESIGN STUDIO</h4>
 					<p>191186, Санкт-Петербург,<br> 
 					ул. Б. Конюшенная, д. 19/8
 					</p>
 					<p>тел. +7 (812) 275-75-75</p>
-					<a class="button btn-large" href="mailto:#" title="Написать письмо">Напишите нам</a>
+					<a class="button" href="mailto:#" title="Написать письмо">Напишите нам</a>
 				</div>
 			</div>
 		</section>
@@ -151,19 +151,19 @@
 			<h2>Напишите нам</h2>
 			<form class="message" action="https://echo.htmlacademy.ru" method="post">
 				<p>
-					<label for="name-field">Ваше имя:</label><br>
-					<input type="text" name="name" id="name-field" placeholder="Имя Фамилия">
+					<label for="name-field">Ваше имя:</label>
+					<input type="text" name="name" id="name-field" placeholder="Имя Фамилия" onfocus="placeholder='';" onblur="placeholder='Имя Фамилия';">
 				</p>
 				<p>
-					<label for="email-field">Ваш e-mail:</label><br>
-					<input type="email" name="email" id="email-field" placeholder="email@example.com">
+					<label for="email-field">Ваш e-mail:</label>
+					<input type="email" name="email" id="email-field" placeholder="email@example.com" onfocus="placeholder='';" onblur="placeholder='email@example.com';">
 				</p>
 				<p>
-					<label for="message-field">Текст письма:</label><br>
-					<textarea name="message" id="message-field" placeholder="В свободной форме"></textarea>
+					<label for="message-field">Текст письма:</label>
+					<textarea name="message" id="message-field" placeholder="В свободной форме" onfocus="placeholder='';" onblur="placeholder='В свободной форме';"></textarea>
 				</p>
-				<button class="modal-close" type="button">Закрыть</button>
 				<button type="submit" class="modal-button button">Отправить</button>
+				<button class="modal-close" type="button">&#10006</button>
 			</form>
 		</section>
 	</main>

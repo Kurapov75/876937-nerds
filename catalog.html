@@ -7,7 +7,7 @@
 	<link href="css/normalize.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 </head>
-<body>
+<body class="inner">
 	<header class="hdr-main">
 		<div class="layout-positioner">
 			<a class="hdr-logo" href="index.html">
@@ -49,7 +49,7 @@
 							<legend>Сетка</legend>
 							<ul class="filter-option">
 								<li>
-									<input class="visually-hidden filter-radio" type="radio" name="grid" id="adaptive" value="adaptive" disabled>
+									<input class="visually-hidden filter-radio" type="radio" name="grid" id="adaptive" value="adaptive" checked>
 									<label for="adaptive">Адаптивная</label>
 								</li>
 								<li>
@@ -57,7 +57,7 @@
 									<label for="fixed">Фиксированная</label>
 								</li>
 								<li>
-									<input class="visually-hidden filter-radio" type="radio" name="grid" id="rubber" value="rubber">
+									<input class="visually-hidden filter-radio" type="radio" name="grid" id="rubber" value="rubber" disabled>
 									<label for="rubber">Резиновая</label>
 								</li>
 							</ul>
@@ -102,6 +102,7 @@
 					</div>
 					<ul class="catalog-list">
 						<li class="catalog-item">
+							<span>&#9679 &#9679 &#9679</span>
 							<img src="img/img-sedona.jpg" width="360" height="575" alt="Миниатюра макета Седона">
 							<div class="catalog-item-hidden">
 								<a href="#"><h3>Sedona</h3></a><!--Ссылка на страницу где макет можно посмотреть в полном виде-->
@@ -110,6 +111,7 @@
 							</div>
 						</li>
 						<li class="catalog-item">
+							<span>&#9679 &#9679 &#9679</span>
 							<img src="img/img-pink.jpg" width="360" height="575" alt="Миниатюра макета Pink APP">
 							<div class="catalog-item-hidden">
 								<a href="#"><h3>Pink APP</h3></a>
@@ -118,6 +120,7 @@
 							</div>
 						</li>
 						<li class="catalog-item">
+							<span>&#9679 &#9679 &#9679</span>
 							<img src="img/img-barbershop.jpg" width="360" height="575" alt="Миниатюра макета Барбершоп Бородинский">
 							<div class="catalog-item-hidden">
 								<a href="#"><h3>Барбершоп "Бородинский"</h3></a>
@@ -126,6 +129,7 @@
 							</div>
 						</li>
 						<li class="catalog-item">
+							<span>&#9679 &#9679 &#9679</span>
 							<img src="img/img-mishka.jpg" width="360" height="575" alt="Миниатюра макета Мишка">
 							<div class="catalog-item-hidden">
 								<a href="#"><h3>Mishka</h3></a>
@@ -134,6 +138,7 @@
 							</div>
 						</li>
 						<li class="catalog-item">
+							<span>&#9679 &#9679 &#9679</span>
 							<img src="img/img-aplus.jpg" width="360" height="575" alt="Миниатюра макета A Плюс">
 							<div class="catalog-item-hidden">
 								<a href="#"><h3>А +</h3></a>
@@ -142,6 +147,7 @@
 							</div>
 						</li>
 						<li class="catalog-item">
+							<span>&#9679 &#9679 &#9679</span>
 							<img src="img/img-kvast.jpg" width="360" height="575" alt="Миниатюра макета Кваст">
 							<div class="catalog-item-hidden">
 								<a href="#"><h3>Кваст</h3></a>
@@ -161,8 +167,8 @@
 		</div>
 		<section class="contacts">
 			<h2 class="visually-hidden">Наши контактные данные</h2>
+			<iframe src="https://yandex.ru/map-widget/v1/-/CBFunCEKpA" width="600" height="420" frameborder="0" allowfullscreen="true"></iframe>
 			<div class="wrapper-contacts">
-				<iframe src="https://yandex.ru/map-widget/v1/-/CBFunCEKpA" width="600" height="400" frameborder="0" allowfullscreen="true"></iframe>
 				<div class="windows-contacts">
 					<h4>NЁRDS DESIGN STUDIO</h4>
 					<p>191186, Санкт-Петербург,<br> 
@@ -177,19 +183,19 @@
 			<h2>Напишите нам</h2>
 			<form class="message" action="https://echo.htmlacademy.ru" method="post">
 				<p>
-					<label for="name-field">Ваше имя:</label><br>
-					<input type="text" name="name" id="name-field" placeholder="Имя Фамилия">
+					<label for="name-field">Ваше имя:</label>
+					<input type="text" name="name" id="name-field" placeholder="Имя Фамилия" onfocus="placeholder='';" onblur="placeholder='Имя Фамилия';">
 				</p>
 				<p>
-					<label for="email-field">Ваш e-mail:</label><br>
-					<input type="email" name="email" id="email-field" placeholder="email@example.com">
+					<label for="email-field">Ваш e-mail:</label>
+					<input type="email" name="email" id="email-field" placeholder="email@example.com" onfocus="placeholder='';" onblur="placeholder='email@example.com';">
 				</p>
 				<p>
-					<label for="message-field">Текст письма:</label><br>
-					<textarea name="message" id="message-field">В свободной форме</textarea>
+					<label for="message-field">Текст письма:</label>
+					<textarea name="message" id="message-field" placeholder="В свободной форме" onfocus="placeholder='';" onblur="placeholder='В свободной форме';"></textarea>
 				</p>
-				<button class="modal-close" type="button">Закрыть</button>
 				<button type="submit" class="modal-button button">Отправить</button>
+				<button class="modal-close" type="button">&#10006</button>
 			</form>
 		</section>
 	</main>
@@ -207,7 +213,8 @@
 				</li>
 			</ul>
 			<div class="promo">
-				<p><strong>Давайте дружить, это выгодно!</strong><br>Скидка 10% для друзей из социальных сетей.</p>
+				<p><strong>Давайте дружить, это выгодно!</strong></p>
+				<p>Скидка 10% для друзей из социальных сетей.</p>
 			</div>
 		</div>
 	</footer>
