@@ -22,6 +22,7 @@
   }
 
   .button {
+    display: inline-block;
     font: inherit;
     text-align: center;
     color: #ffffff;
@@ -62,8 +63,9 @@
   }
 
   .layout-positioner {
-    width: 1160px;
+    width: 1200px;
     margin: 0 auto;
+    padding: 0 20px;
   }
 
   header,
@@ -91,6 +93,7 @@
     line-height: 55px;
     color: #000;
     text-align: center;
+    margin-top: 70px;
   }
 
   .hdr-logo img:hover {
@@ -150,19 +153,18 @@
   }
 
   .feature-slide {
-    height: 430px;
     outline: 1px solid red; /* Временно */
   }
 
   .wrapper-slide {
     width: 520px;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 73px;
+    padding-bottom: 82px;
   }
 
   .wrapper-slide p {
-    margin-top: 25px;
-    margin-bottom: 48px;
+    margin-top: 29px;
+    margin-bottom: 39px;
   }
 
   .wrapper-slide p:first-child {
@@ -185,13 +187,13 @@
   }
 
   .btn-slide {
-    padding: 15px 55px;
+    padding: 17px 55px 15px 55px;
   }
 
   .advant-list {
     display: flex;
     padding-top: 80px;
-    padding-bottom: 93px;
+    padding-bottom: 80px;
     border-bottom: 2px solid #eee;
   }
 
@@ -200,17 +202,24 @@
     margin-right: 100px;
     padding-top: 145px;
   }
+
+  .advant-item:last-child {
+    margin-right: 0;
+  }
   
   .advant-item:first-child {
     background: url("../img/illustration-1.png") no-repeat;
+    background-size: 100% 145px;
   }
 
   .advant-item:nth-child(2) {
     background: url("../img/illustration-2.png") no-repeat;
+    background-size: 100% 145px;
   }
 
   .advant-item:last-child {
     background: url("../img/illustration-3.png") no-repeat;
+    background-size: 100% 145px;
   }
 
   .advant-item h3 {
@@ -223,11 +232,11 @@
 
   .advant-item p {
     margin-top: 0;
-    margin-bottom: 45px;
+    margin-bottom: 32px;
   }
 
   .advant-item .button {
-    padding: 15px 40px;
+    padding: 17px 40px 15px 40px;
   }
 
   .btn-green {
@@ -396,17 +405,17 @@
   }
 
   .windows-contacts p:nth-of-type(2) {
-    margin-bottom: 50px;
+    margin-bottom: 38px;
   }
 
   .windows-contacts .button {
-    padding: 15px 45px;
+    padding: 17px 45px 15px 45px;
   } 
 
   .flex-container {
     display: flex;
     justify-content: space-between;
-    padding-top: 50px;
+    padding-top: 53px;
   }
 
   .filters {
@@ -415,7 +424,7 @@
 
   .filters fieldset {
     border: none;
-    margin-bottom: 25px;
+    margin-bottom: 28px;
   }
 
   .filters ul {
@@ -452,6 +461,7 @@
     left: -35px;
     top: 8px;
     background: url("../img/radio-off.png") no-repeat;
+    opacity: 0.5;
   }
 
   .filter-radio:checked+label::before {
@@ -462,6 +472,7 @@
     left: -35px;
     top: 8px;
     background: url("../img/radio-on.png") no-repeat;
+    opacity: 0.5;
   }
 
   .filter-checkbox+label::before {
@@ -472,6 +483,7 @@
     left: -35px;
     top: 8px;
     background: url("../img/checkbox-off.png") no-repeat;
+    opacity: 0.5;
   }
 
   .filter-checkbox:checked+label::before {
@@ -482,20 +494,24 @@
     left: -35px;
     top: 8px;
     background: url("../img/checkbox-on.png") no-repeat;
-
+    opacity: 0.5;
   }
 
-  .filters input:hover+label,
-  .filters input:focus+label {
-    color: #283136;
+  .filters input:hover+label::before,
+  .filters input:focus+label::before {
+    opacity: 1;
   }
 
   .filters input:disabled+label {
     color: #bec1c2;
   }
 
+  .filters input:disabled+label::before {
+    opacity: 0.15;
+  }
+
   .filter-button {
-    padding: 15px 90px;
+    padding: 17px 90px 15px 90px;
     font-weight: 500;
     color: #000;
     background-color: #eee;
@@ -529,7 +545,26 @@
 
   .sort li {
     display: inline-block;
-    margin-left: 30px;
+    margin-left: 21px;
+  }
+
+  .sort li:last-of-type a,
+  .sort li:nth-last-of-type(2) a {
+    font-size: 32px;
+    vertical-align: middle;
+  }
+
+  .sort li:last-of-type a {
+    position: relative;
+    right: -8px;
+  }
+
+  .sort li:last-of-type {
+    margin-left: -10px;
+  }
+
+  .sort li:nth-last-of-type(2) {
+    margin-left: 36px;
   }
 
   .sort a {
@@ -556,7 +591,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 60px;
+    margin-top: 47px;
   }
 
   .catalog-item {
@@ -648,7 +683,7 @@
   .pagination-item a:active {
     color: #959595;
     background-color: #d5d5d5;
-    box-shadow: inset 0 3px #bfbfbf;
+    border-top-color: #bfbfbf;
   }
 
   .pagination-item-current a {
@@ -665,8 +700,8 @@
   }
 
   .ftr-main {
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding-top: 50px;
+    padding-bottom: 55px;
   }
 
   .ftr-main .layout-positioner {
@@ -712,20 +747,18 @@
   }
 
   .promo {
-    padding-top: 5px;
-  }
+    padding-top: 7px;
+}
 
   .promo strong {
     color: #000;
     font-weight: 700;
     font-size: 36px;
-    line-height: 36px;
   }
 
-  .promo p:last-child {
-    margin-top: -7px;
+  .promo p {
     color: #444;
-    line-height: 22px;
+    line-height: 32px;
   }
 
   .modal {
@@ -839,7 +872,7 @@
   }
 
   .modal-button {
-    padding: 15px 80px;
+    padding: 17px 80px 15px 80px;
     cursor: pointer;
     outline: none;
   }
