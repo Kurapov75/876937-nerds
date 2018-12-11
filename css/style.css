@@ -66,6 +66,7 @@
     width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    box-sizing: border-box;
   }
 
   header,
@@ -423,6 +424,7 @@
   }
 
   .filters fieldset {
+    padding: 0;
     border: none;
     margin-bottom: 28px;
   }
@@ -673,6 +675,7 @@
   
   .pagination-item:last-child a {
     padding: 10px 82px;
+    text-transform: uppercase;
   }
 
   .pagination-item a:hover,
@@ -710,7 +713,6 @@
   }
 
   .social-menu {
-    width: 260px;
     margin-right: 127px;
   }
 
@@ -720,12 +722,17 @@
 
   .social-menu a {
     display: inline-block;
-    background-color: #e1e1e1;
     width: 80px;
     height: 80px;
+    margin-right: 8px;
     border-radius: 50%;
     text-align: center;
     line-height: 80px;
+    background-color: #e1e1e1;
+  }
+
+  .social-menu li:last-child a {
+    margin-right: 0;
   }
 
   .social-menu img {
@@ -745,10 +752,6 @@
   .social-menu a:active img {
     opacity: 0.5;
   }
-
-  .promo {
-    padding-top: 7px;
-}
 
   .promo strong {
     color: #000;
