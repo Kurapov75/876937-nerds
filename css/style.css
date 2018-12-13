@@ -63,10 +63,9 @@
   }
 
   .layout-positioner {
-    width: 1200px;
+    width: 1160px;
     margin: 0 auto;
     padding: 0 20px;
-    box-sizing: border-box;
   }
 
   header,
@@ -153,8 +152,63 @@
     background: url("../img/cart-icon.png") no-repeat;
   }
 
+  .slider .layout-positioner {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .slider input[type="radio"] {
+    display: none;
+  }
+
+  .slider-controls {
+    position: absolute;
+    bottom: 90px;
+    left: 50%;
+    z-index: 1;
+  }
+
+  .slider-controls label {
+    display: inline-block;
+    margin: 0 3px;
+    width: 10px;
+    height: 10px;
+    border: 4px solid white;
+    border-radius: 50%;
+    background-color: #cccccc;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+
+  #btn-1:checked ~ .slider-controls label[for="btn-1"],
+  #btn-2:checked ~ .slider-controls label[for="btn-2"],
+  #btn-3:checked ~ .slider-controls label[for="btn-3"] {
+    background-color: #666666;
+  }
+  
+  
+  #btn-1:checked ~ .slider-inner .features {
+    transform: translate(0);
+  }
+  
+  #btn-2:checked ~ .slider-inner .features {
+    transform: translate(-1200px);
+  }
+  
+  #btn-3:checked ~ .slider-inner .features {
+    transform: translate(-2400px);
+  }
+
+  .features {
+    width: 320%;
+    word-wrap: break-word;
+    transition: transform 0.8s ease;
+  }
+
   .feature-slide {
-    outline: 1px solid red; /* Временно */
+    width: 1190px;
+    float: left;
   }
 
   .wrapper-slide {
@@ -376,6 +430,7 @@
   }
 
   .contacts {
+    position: relative;
     padding-top: 80px;
   }
 
@@ -384,12 +439,21 @@
   }
 
   .contacts iframe {
+    position: absolute;
+    top: 75px;
+    left: 0;
     width: 100%;
+    z-index: 1;
+  }
+
+  .inner .contacts iframe {
+    top: 60px;
   }
 
   .wrapper-contacts {
     position: relative;
-    width: 1160px;
+    width: 1440px;
+    height: 420px;
     margin: 0 auto;
   }
 
@@ -397,11 +461,12 @@
     position: absolute;
     width: 320px;
     height: 310px;
-    top: -370px;
-    left: 0;
+    top: 50px;
+    left: 140px;
     padding: 25px 50px;
     box-sizing: border-box;
     background-color: #fff;
+    z-index: 2;
   }
 
   .windows-contacts h4 {
