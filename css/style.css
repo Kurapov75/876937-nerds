@@ -501,7 +501,7 @@
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     background-color: #fff;
-    z-index: 2;
+    z-index: 3500;
   }
 
   .windows-contacts h4 {
@@ -903,6 +903,7 @@
     left: 0;
     background: rgba(255,255,255,0.4);
     display: none;
+    z-index: 5000;
   }
 
   .modal:target {
