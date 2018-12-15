@@ -689,6 +689,7 @@
 
   .catalog-item:hover {
     background-color: #4d4d4d;
+    box-shadow: 0 5px 20px -5px rgba(0, 0, 0, 0.685);
   }
 
   .catalog-item:hover>.catalog-item-hidden {
