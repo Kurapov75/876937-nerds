@@ -269,6 +269,7 @@
     display: flex;
     list-style: none;
     margin: 0;
+    padding: 0;
     padding-top: 80px;
     padding-bottom: 80px;
     border-bottom: 2px solid #eee;
@@ -450,36 +451,53 @@
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     list-style: none;
     margin: 0;
-    padding: 45px 30px 37px 30px;
+    padding: 47px 30px;
     border-top: 2px solid #eee;
     border-bottom: 2px solid #eee;
   }
 
   .partner-item {
+    position: relative;
+    height: 86px;
+    vertical-align: middle;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+
+  .partner-item:not(:first-child)::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: -56px;
+    display: block;
+    width: 2px;
+    height: 55px;
+    opacity: 1;
+    background-color: #ccc;
+  }
+
+  .partner-item:first-child,
+  .partner-item:nth-child(3) {
+    padding-top: 15px;
+  }
+
+  .partner-item img {
     opacity: 0.3;
   }
 
-  .partner-item:hover {
+  .partner-item:hover img {
     opacity: 1;
   }
 
-  .partner-item:active {
+  .partner-item:active img {
     opacity: 0.1;
-  }
-
-  .partner-item:first-child {
-    margin-top: 17px;
-  }
-
-  .partner-item:nth-child(3) img{
-    margin-top: 17px;
-  }
-
-  .partner-item:last-child {
-    margin-top: 7px;
   }
 
   .contacts {
@@ -507,7 +525,7 @@
 
   .wrapper-contacts {
     position: relative;
-    width: 1200px;
+    width: 1160px;
     height: 420px;
     margin: 0 auto;
   }
