@@ -4,21 +4,11 @@
     font: 400 16px/24px "Roboto", "Arial", sans-serif;
     color: #283136;
     background-color: #fff;
+    overflow-x: hidden;
   }
 
   a {
     text-decoration: none;
-  }
-
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  img {
-    max-width: 100%;
-    height: auto;
   }
 
   .button {
@@ -115,7 +105,8 @@
   nav a,
   nav+a {
     display: block;
-    margin-top: 7px;
+    margin-top: 15px;
+    padding-bottom: 10px;
     font-weight: 500;
     line-height: 18px;
     text-transform: uppercase;
@@ -135,6 +126,8 @@
   }
 
   .main-menu {
+    position: relative;
+    left: -23px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -144,6 +137,9 @@
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     width: 440px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
   }
 
   .main-menu-current {
@@ -228,7 +224,7 @@
   }
 
   .feature-slide {
-    width: 1190px;
+    width: 1180px;
     float: left;
   }
 
@@ -239,12 +235,13 @@
   }
 
   .wrapper-slide p {
-    margin-top: 29px;
+    margin-top: 26px;
     margin-bottom: 39px;
   }
 
   .wrapper-slide p:first-child {
     margin: 0;
+    color: #000;
     font-weight: 500;
     font-size: 55px;
     line-height: 55px;
@@ -270,6 +267,8 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    list-style: none;
+    margin: 0;
     padding-top: 80px;
     padding-bottom: 80px;
     border-bottom: 2px solid #eee;
@@ -301,7 +300,8 @@
   }
 
   .advant-item h3 {
-    margin-bottom: 13px;
+    margin-bottom: 15px;
+    color: #000;
     font-weight: 700;
     font-size: 24px;
     line-height: 30px;
@@ -361,14 +361,27 @@
             justify-content: space-between;
   }
 
+  .wrapper-studio ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
   .wrapper-studio li {
+    position: relative;
     margin-bottom: 25px;
+    padding-left: 37px;
   }
 
   .wrapper-studio li::before {
-    content: "― ";
-    color: #fb565a;
-    font-size: 27px;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 25px;
+    height: 2px;
+    background-color: #fb565a;
   }
 
   .wrapper-studio:first-child {
@@ -382,19 +395,23 @@
   }
 
   .wrapper-studio p:first-child {
+    color: #000;
     font-weight: 700;
     font-size: 45px;
     line-height: 45px;
     margin-top: 35px;
-    margin-bottom: 30px;
+    margin-bottom: 33px;
   }
 
   .wrapper-studio p:nth-child(2) {
-    margin-bottom: 30px;
+    margin-bottom: 38px;
   }
 
   .wrapper-studio p:last-of-type {
     margin-bottom: 25px;
+  }
+
+  table {
   }
 
   .studio-table caption {
@@ -403,23 +420,26 @@
 
   .studio-table caption,
   .wrapper-studio p:last-of-type {
+    color: #000;
     font-weight: 700;
     text-transform: uppercase;
   }
 
   .studio-table td {
-    padding: 5px 20px 15px 0;
+    padding: 5px 10px 15px 0;
     text-align: left;
     line-height: 1.2;
   }
 
   .studio-table strong {
+    color: #000;
     font-weight: 700;
     font-size: 45px;
     line-height: 10.06px;
   }
 
   .studio-table sup {
+    color: #000;
     font-weight: 700;
     font-size: 30px;
     vertical-align: middle;
@@ -430,10 +450,11 @@
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
-        justify-content: space-around;
+        justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 45px 30px 37px 30px;
     border-top: 2px solid #eee;
-    padding-top: 45px;
-    padding-bottom: 37px;
     border-bottom: 2px solid #eee;
   }
 
@@ -496,7 +517,7 @@
     width: 320px;
     height: 310px;
     top: 50px;
-    left: 140px;
+    left: 0;
     padding: 25px 50px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -525,7 +546,7 @@
     padding: 17px 45px 15px 45px;
   } 
 
-  .flex-container {
+  .catalog-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -559,6 +580,12 @@
 
   .filter-slider legend {
     margin-bottom: 60px;
+  }
+
+  .filter-option {
+    list-style: none;
+    margin: 0;
+    padding: 0;
   }
 
   .filter-option li {
@@ -649,8 +676,21 @@
     outline: none;
   }
 
+  .sort {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: flex-start;
+  }
+
   .sort p {
     display: inline;
+    margin: 0;
     color: #000;
     font-weight: 700;
     font-size: 18px;
@@ -659,7 +699,9 @@
   }
 
   .sort ul {
-    float: right;
+    list-style: none;
+    margin: 0;
+    padding: 0;
   }
 
   .sort li {
@@ -715,6 +757,9 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
     margin-top: 47px;
   }
 
@@ -752,9 +797,13 @@
   .catalog-item-hidden {
     position: absolute;
     display: none;
-    width: 360px;
-    padding-top: 10px;
-    padding-bottom: 50px;
+    width: 100%;
+    max-height: 230px; 
+    overflow-y: auto; 
+    -webkit-box-sizing: border-box; 
+            box-sizing: border-box;
+    padding-top: 7px;
+    padding-bottom: 40px;
     bottom: 0;
     left: 0;
     background-color: #eee;
@@ -769,7 +818,7 @@
   }
 
   .catalog-item-hidden p {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     color: #666;
     font-size: 16px;
     line-height: 18px;
@@ -779,16 +828,22 @@
     padding: 15px 60px;
   }
 
+  .pagination-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 25px;
+  }
+
   .pagination-item {
     display: inline-block;
     vertical-align: top;
-    margin-top: 25px;
+    margin-right: 8px;
   }
 
   .pagination-item a { 
     display: block;
     padding: 10px 17px;
-    margin-right: 8px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     font-weight: 500;
@@ -843,6 +898,9 @@
   }
 
   .social-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
     margin-right: 127px;
   }
 
