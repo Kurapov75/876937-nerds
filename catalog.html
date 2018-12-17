@@ -176,12 +176,12 @@
 					ул. Б. Конюшенная, д. 19/8
 					</p>
 					<p>тел. +7 (812) 275-75-75</p>
-					<a class="button btn-large" href="#open-modal" title="Написать письмо">Напишите нам</a>
+					<a class="button modal-open" href="#" title="Написать письмо">Напишите нам</a>
 				</div>
 			</div>
 		<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A1c86262f30f2a0dd16f19cb515d6ae26f671a3a46655e32dbae77481164a32fb&amp;source=constructor"></iframe>
 		</section>
-		<section class="modal" id="open-modal">
+		<section class="modal">
 			<div class="modal-message">
 			<h2>Напишите нам</h2>
 			<form class="message" action="https://echo.htmlacademy.ru" method="post">
@@ -198,7 +198,7 @@
 					<textarea name="message" id="message-field" placeholder="В свободной форме" onfocus="placeholder='';" onblur="placeholder='В свободной форме';"></textarea>
 				</p>
 				<button type="submit" class="modal-button button">Отправить</button>
-				<a href="#close" class="modal-close">&#10006;</a>
+				<button class="modal-close" type="button" title="Закрыть">&#10006;</button>
 			</form>
 			</div>
 		</section>
@@ -207,13 +207,13 @@
 		<div class="layout-positioner">
 			<ul class="social-menu">
 				<li>
-					<a href="#" title="Мы В Контакте" target="_blank"><img src="img/vk-icon.svg" alt="В Контакте"></a>
+					<a href="#" title="Мы В Контакте" target="_blank"><img src="img/vk-icon.svg" width="26" height="15" alt="В Контакте"></a>
 				</li>
 				<li>
-					<a href="#" title="Мы в Фейсбуке" target="_blank"><img src="img/fb-icon.svg" alt="Фейсбук"></a>
+					<a href="#" title="Мы в Фейсбуке" target="_blank"><img src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук"></a>
 				</li>
 				<li>
-					<a href="#" title="Мы в Инстаграм" target="_blank"><img src="img/insta-icon.svg" alt="Инстаграм"></a>
+					<a href="#" title="Мы в Инстаграм" target="_blank"><img src="img/insta-icon.svg" width="21" height="21" alt="Инстаграм"></a>
 				</li>
 			</ul>
 			<div class="promo">
@@ -222,5 +222,6 @@
 			</div>
 		</div>
 	</footer>
+	<script src="js/script.js"></script>
 </body>
 </html>

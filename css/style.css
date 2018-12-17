@@ -412,9 +412,6 @@
     margin-bottom: 25px;
   }
 
-  table {
-  }
-
   .studio-table caption {
     margin-bottom: 50px;
   }
@@ -427,7 +424,7 @@
   }
 
   .studio-table td {
-    padding: 5px 10px 15px 0;
+    padding: 5px 20px 15px 0;
     text-align: left;
     line-height: 1.2;
   }
@@ -982,9 +979,8 @@
     z-index: 5000;
   }
 
-  .modal:target {
+  .modal-show {
     display: block;
-    pointer-events: auto;
   }
 
   .modal-message {
