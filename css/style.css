@@ -981,6 +981,7 @@
 
   .modal-show {
     display: block;
+    animation: scale 0.3s;
   }
 
   .modal-message {
@@ -1087,4 +1088,26 @@
     padding: 17px 80px 15px 80px;
     cursor: pointer;
     outline: none;
+  }
+
+  @keyframes scale {
+    0% {
+      transform: scale(0);
+    }
+  
+    25% {
+      transform: scale(0.25);
+    }
+
+    50% {
+      transform: scale(0.5);
+    }
+  
+    75% {
+      transform: scale(0.75);
+    }
+
+    100% {
+      transform: scale(1);
+    }
   }
