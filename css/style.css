@@ -224,7 +224,7 @@
   }
 
   .feature-slide {
-    width: 1180px;
+    width: 1190px;
     float: left;
   }
 
@@ -789,6 +789,11 @@
     background-color: #e9e9e9;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+  }
+
+  .catalog-item img {
+    width: 360px;
+    height: 575px;
   }
 
   .catalog-item:hover {
