@@ -33,16 +33,18 @@
 					<form class="filter" action="https://echo.htmlacademy.ru" method="post">
 						<fieldset class="filter-slider">
 							<legend>Стоимость:</legend>
-							<div class="slider-range">
-								<input type="range" min="0" max="15000" step="100" value="7500">
-							</div>
-							<div class="pull-left">
-                            	<span class="input-slider"> от</span>
-                            	<input class="slider-min" name="catalog-min" type="text" value="">
-							</div>
-							<div class="pull-right">
-                            	<span class="input-slider"> до</span>
-                            	<input class="slider-max" name="catalog-max" type="text" value="">
+							<div class="range-filter">
+								<div class="range-controls">
+									<div class="scale">
+										<div class="bar"></div>
+									</div>
+									<div class="toggle toggle-min"></div>
+									<div class="toggle toggle-max"></div>
+								</div>
+								<div class="price-controls">
+									<label class="min-price">от <input name="min-price" type="text" value="0"></label>
+									<label class="max-price">до <input name="max-price" type="text" value="15 000"></label>
+								</div>
 							</div>
 						</fieldset>
 						<fieldset class="filter-grid">
@@ -95,11 +97,11 @@
 					<div class="sort">
 						<p>Сортировать:</p>
 						<ul>
-							<li><a href="#">По цене</a></li>
+							<li><a class="active" href="#">По цене</a></li>
 							<li><a href="#">По типу</a></li>
 							<li><a href="#">По названию</a></li>
-							<li><a href="#" title="Сортировка по возростанию">&#9662;</a></li>
-							<li><a href="#" title="Сортировка по убыванию">&#9652;</a></li>
+							<li><a class="active" href="#" aria-label="Сортировка по возростанию">&#9662;</a></li>
+							<li><a href="#" aria-label="Сортировка по убыванию">&#9652;</a></li>
 						</ul>
 					</div>
 					<ul class="catalog-list">
@@ -108,7 +110,7 @@
 							<img src="img/img-sedona.jpg" width="360" height="575" alt="Миниатюра макета Седона">
 							<div class="catalog-item-hidden">
 								<a href="#"><h3>Sedona</h3></a>
-								<p>Информационный сайт<br> для туристов</p>
+								<p>Информационный сайт для туристов</p>
 								<a class="button" href="#">9 900 руб.</a>
 							</div>
 						</li>
@@ -117,7 +119,7 @@
 							<img src="img/img-pink.jpg" width="360" height="575" alt="Миниатюра макета Pink APP">
 							<div class="catalog-item-hidden">
 								<a href="#"><h3>Pink APP</h3></a>
-								<p>Продуктовый лендинг<br>приложения для iOS и Android</p>
+								<p>Продуктовый лендинг приложения для iOS и Android</p>
 								<a class="button" href="#">9 900 руб.</a>
 							</div>
 						</li>
@@ -126,7 +128,7 @@
 							<img src="img/img-barbershop.jpg" width="360" height="575" alt="Миниатюра макета Барбершоп Бородинский">
 							<div class="catalog-item-hidden">
 								<a href="#"><h3>Barbershop</h3></a>
-								<p>Салон красоты.<br>Для мужчин, да.</p>
+								<p>Сайт салона красоты. Для мужчин, да.</p>
 								<a class="button" href="#">9 900 руб.</a>
 							</div>
 						</li>
@@ -135,7 +137,7 @@
 							<img src="img/img-mishka.jpg" width="360" height="575" alt="Миниатюра макета Мишка">
 							<div class="catalog-item-hidden">
 								<a href="#"><h3>Mishka</h3></a>
-								<p>Интернет-магазин<br>вязанных игрушек</p>
+								<p>Интернет-магазин вязанных игрушек</p>
 								<a class="button" href="#">9 900 руб.</a>
 							</div>
 						</li>
@@ -144,7 +146,7 @@
 							<img src="img/img-aplus.jpg" width="360" height="575" alt="Миниатюра макета A Плюс">
 							<div class="catalog-item-hidden">
 								<a href="#"><h3>А Plus</h3></a>
-								<p>Лендинг курсов<br>повышения квалификации</p>
+								<p>Лендинг курсов повышения квалификации</p>
 								<a class="button" href="#">9 900 руб.</a>
 							</div>
 						</li>
@@ -153,7 +155,7 @@
 							<img src="img/img-kvast.jpg" width="360" height="575" alt="Миниатюра макета Кваст">
 							<div class="catalog-item-hidden">
 								<a href="#"><h3>Кваст</h3></a>
-								<p>Промо-сайт производителя<br>крафтового кваса</p>
+								<p>Промо-сайт производителя крафтового кваса</p>
 								<a class="button" href="#">9 900 руб.</a>
 							</div>
 						</li>
@@ -176,12 +178,12 @@
 					ул. Б. Конюшенная, д. 19/8
 					</p>
 					<p>тел. +7 (812) 275-75-75</p>
-					<a class="button modal-open" href="#" title="Написать письмо">Напишите нам</a>
+					<a class="button modal-open" href="#open-modal" title="Написать письмо">Напишите нам</a>
 				</div>
 			</div>
 		<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A1c86262f30f2a0dd16f19cb515d6ae26f671a3a46655e32dbae77481164a32fb&amp;source=constructor"></iframe>
 		</section>
-		<section class="modal">
+		<section class="modal" id="open-modal">
 			<div class="modal-message">
 			<h2>Напишите нам</h2>
 			<form class="message" action="https://echo.htmlacademy.ru" method="post">
@@ -198,7 +200,7 @@
 					<textarea name="message" id="message-field" placeholder="В свободной форме" onfocus="placeholder='';" onblur="placeholder='В свободной форме';"></textarea>
 				</p>
 				<button type="submit" class="modal-button button">Отправить</button>
-				<button class="modal-close" type="button" title="Закрыть">&#10006;</button>
+				<a class="modal-close" href="#close" title="Закрыть">&#10006;</a>
 			</form>
 			</div>
 		</section>
@@ -207,17 +209,17 @@
 		<div class="layout-positioner">
 			<ul class="social-menu">
 				<li>
-					<a href="#" title="Мы В Контакте" target="_blank"><img src="img/vk-icon.svg" width="26" height="15" alt="В Контакте"></a>
+					<a class="social-link" href="#" aria-label="Мы В Контакте" target="_blank"><img src="img/vk-icon.svg" width="26" height="15" alt="В Контакте"></a>
 				</li>
 				<li>
-					<a href="#" title="Мы в Фейсбуке" target="_blank"><img src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук"></a>
+					<a class="social-link" href="#" aria-label="Мы в Фейсбуке" target="_blank"><img src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук"></a>
 				</li>
 				<li>
-					<a href="#" title="Мы в Инстаграм" target="_blank"><img src="img/insta-icon.svg" width="21" height="21" alt="Инстаграм"></a>
+					<a class="social-link" href="#" aria-label="Мы в Инстаграм" target="_blank"><img src="img/insta-icon.svg" width="21" height="21" alt="Инстаграм"></a>
 				</li>
 			</ul>
 			<div class="promo">
-				<p><strong>Давайте дружить, это выгодно!</strong><br>
+				<p><strong>Давайте дружить, это выгодно!</strong>
 				Скидка 10% для друзей из социальных сетей.</p>
 			</div>
 		</div>
